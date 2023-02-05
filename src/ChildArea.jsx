@@ -12,6 +12,7 @@ const style = {
 // 2.propsが更新されたコンポーネントは再レンダリング
 // 3.再レンダリングされたコンポーネント配下の子要素は再レンダリング
 // アロー関数全体をmemo()で囲むことで、propsが変更されない限りこのコンポーネントは再レンダリングされなくなる
+
 export const ChildArea = memo((props) => {
     const { open } = props;
     console.log("ChildAreaがレンダリングされた!!");
