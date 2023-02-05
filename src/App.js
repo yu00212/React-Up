@@ -10,7 +10,7 @@ export default function App() {
 
   const onClickOpen = () => setOpen(!open);
 
-  // useCallbackで関数のmemo化
+  // useCallbackで関数をmemo化
   const onClickClose = () => useCallback(setOpen(false), [setOpen]);
 
   return (
